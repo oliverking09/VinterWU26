@@ -1,4 +1,49 @@
-
 body {
     background-color: rgba(32, 35, 42, 1);
+}
+div {
+gap: 20px;  
+display: grid;
+grid-template-columns: 20% 1fr 1fr;  
+grid-template-rows: 150px 100px 1fr 1fr 100px;
+  
+grid-template-areas:
+"he he he"
+"nv nv nv"
+"sb c1 c2"
+"sb c1 c2"
+"ft ft ft";
+    
+ min-height: 200vh;
+}
+header, nav, content1, content2, sidebar, footer {
+    border-radius: 12px;
+    padding: 20px;
+  }
+header {
+grid-area: he;
+background-color: #9FAED1;
+text-align: center;
+
+}
+
+nav {
+    grid-area: nv;
+    background-color: #808CA8;
+}
+content1 {
+    grid-area: c1;
+    background-color: #9FAED1;
+}
+content2 {
+    grid-area: c2;
+    background-color: #424857;
+}
+sidebar {
+    grid-area: sb;
+    background-color: #616A80;
+}
+footer {
+    grid-area: ft;
+    background-color: #424857;
 }
